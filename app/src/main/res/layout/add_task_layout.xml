@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@drawable/button_states"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="Add Your Task"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/tasksTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine|textAutoCorrect"
+        android:maxLines="10"
+        android:padding="20dp"
+        android:hint="Type your tasks title here..."
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarThumbVertical="@android:color/darker_gray"
+        android:scrollbarSize="2dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/tasksDescriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine|textAutoCorrect"
+        android:maxLines="10"
+        android:padding="20dp"
+        android:hint="Type your tasks description here..."
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarThumbVertical="@android:color/darker_gray"
+        android:scrollbarSize="2dp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Task"
+        android:textColor="@color/blue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnAddTasks"
+        android:layout_marginBottom="15dp"
+        android:textSize="18dp"
+        />
+
+</LinearLayout>
